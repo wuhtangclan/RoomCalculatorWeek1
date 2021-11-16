@@ -6,29 +6,40 @@ namespace RoomCalculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello! Please enter length. ");  //getting user input for length
-            string entryLength = Console.ReadLine();
-            double length = double.Parse(entryLength);
+            Console.WriteLine("Hello! Please enter length of the classroom. ");  //getting user input for length
+            string entry = Console.ReadLine();
+            double length = double.Parse(entry);
 
-            Console.WriteLine("Please enter width. ");  //getting user input for width
-            string entryWidth = Console.ReadLine();
-            double width = double.Parse(entryWidth);
+            Console.WriteLine("Please enter the width of the classroom. ");  //getting user input for width
+            entry = Console.ReadLine();
+            double width = double.Parse(entry);
 
-            Console.WriteLine("Please enter height. ");
-            string entryHeight = Console.ReadLine();
-            double height = double.Parse(entryHeight);
+            Console.WriteLine("Please enter the height of the classroom. ");
+            entry = Console.ReadLine();
+            double height = double.Parse(entry);
 
             double area = length * width;
-            Console.WriteLine("The area of the room is " + area + ".");
+            Console.WriteLine("The area of the classroom is " + area + ".");
 
             double perimeter = (length * 2) + (width * 2);
-            Console.WriteLine("The perimeter of the room is " + perimeter + ".");
+            Console.WriteLine("The perimeter of the classroom is " + perimeter + ".");
 
             double volume = length * width * height;
-            Console.WriteLine("The volume of the room is " + volume + ".");
+            Console.WriteLine("The volume of the classroom is " + volume + ".");
 
             double surfaceArea = ((length * width) * 2) + ((length * height) * 2) + ((width * height) * 2);
-            Console.WriteLine("The surface area of the room is " + surfaceArea + ".");
+            Console.WriteLine("The surface area of the classroom is " + surfaceArea + ".");
+
+            if (area <= 250)
+            {
+                Console.WriteLine("The classroom is classified as small");
+            } else if (area <= 650)
+            {
+                Console.WriteLine("The classroom is classified as medium");
+            } else (area > 650)
+
+
+
 
 
 
