@@ -33,10 +33,17 @@ namespace RoomCalculator
             if (area <= 250)
             {
                 Console.WriteLine("The classroom is classified as small");
-            } else if (area <= 650)
+            } 
+            else if (area >250 && area <= 650)
             {
                 Console.WriteLine("The classroom is classified as medium");
-            } else (area > 650)
+            } 
+            else
+            {
+                Console.WriteLine("The classroom is classified as large.");
+            }
+
+            Console.WriteLine("Have a good day!");
 
 
 
