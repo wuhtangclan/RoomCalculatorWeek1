@@ -19,7 +19,7 @@ namespace NestingNumberAnalyzer
             }
             else if(num % 2 == 0)
             {
-                if(num >= 2 && num <= 25)
+                if(num >= 2 && num <= 24)
                 {
                     Console.WriteLine(name + ", you have entered an even number and less than 25.");
                 } 
